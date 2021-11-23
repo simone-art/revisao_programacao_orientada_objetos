@@ -5,11 +5,31 @@ public class Bluray {
 	//Delimitando o modificador do acesso do atributo como private 
 	//para que assim só essa classe possa ter acesso ao mesmos
 	
-	//Deve ser criados os getter e setter para poder ter acesso aos atributo que agoram são private
 	private String titulo;
 	private int duracao;
 	private int lancamento;
 	private String genero;
+	
+	//Construtor vazio
+	
+	public Bluray() {
+		
+	}
+	
+	//Construtor com parámetros
+	public Bluray(String titulo, int duracao, int lancamento, String genero) {
+		super();
+		this.titulo = titulo;
+		this.duracao = duracao;
+		this.lancamento = lancamento;
+		this.genero = genero;
+	}
+
+
+
+
+	//Deve ser criados os getter e setter para poder ter acesso aos atributo que agoram são private
+	
 	public String getTitulo() {
 		return titulo;
 	}
