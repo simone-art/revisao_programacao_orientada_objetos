@@ -2,10 +2,10 @@ package br.com.fiap.beans;
 
 public class Bluray {
 	
-	public String titulo;
-	int duracao;
-	int lancamento;
-	String genero;
+	private String titulo;
+	private int duracao;
+	private int lancamento;
+	private String genero;
 	
 
 }
