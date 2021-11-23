@@ -11,8 +11,10 @@ public class ViewBluray {
 		Scanner leitor = new Scanner(System.in);
 		 System.out.println("Cadastro de filme!");
 		 String titulo, genero;
-		 int duracao, lancamento;
+		 int id, duracao, lancamento;
 		 
+		 System.out.println("Por favor, informe o id: ");
+	      id = leitor.nextInt();
 		 System.out.println("Por favor, informe o nome do filme: ");
 	      titulo = leitor.nextLine();
 	      System.out.println("Por favor, informe o gênero do filme: ");
@@ -22,7 +24,7 @@ public class ViewBluray {
 	      System.out.println("Por favor, informe o ano de lancamento do filme: ");
 	      lancamento = leitor.nextInt();
 	        
-	        Bluray bluray = new Bluray(titulo, duracao, lancamento, genero);
+	        Bluray bluray = new Bluray(id, titulo, duracao, lancamento, genero);
 	        System.out.println("O filme " + bluray.getTitulo() + " foi cadastrado");
 	    
 	      
