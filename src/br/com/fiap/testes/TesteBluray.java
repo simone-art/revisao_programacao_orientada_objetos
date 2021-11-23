@@ -10,8 +10,10 @@ public class TesteBluray {
 		//Instanciando o objeto
 		Bluray bluray = new Bluray();
 		
-		//Só consegui ter acesso ao titulo ao colocar no atributo o modificar de acesso public
-		bluray.titulo = "Homen Aranha: Sem volta para casa";
+		//Como o atributo titulo passou a ser private, só se pode ter acesso 
+		//com os getters e setter 
+		bluray.setTitulo("Homen Aranha: Sem volta para casa");
+		System.out.println(bluray.getTitulo());
 		
 	}
 
